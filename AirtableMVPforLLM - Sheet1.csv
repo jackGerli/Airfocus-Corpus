@@ -1,0 +1,73 @@
+Feature,Summary
+Delighted Android app,"The ability to view surveys results on my android devise, in a Delighted android app"
+Text analytics,"# Overview
+ 
+ Analyzing qualitative \(verbatim\) data and converting it into a qualitative \(metric\) value is mentally taxing and incredibly tedious for our users. For those teams that have the resources \(headcount\) and the time, they manually review all open ended feedback, applying themes to each response based on defined ‚Äúcode-books‚Äù \(i.e. tagging rules/conventions\). The output of this activity is a count of the most frequent themes found in open ended feedback, for a specified period. If performed at all, these activities occur entirely outside of Delighted. On varying cadences, they report on this data, providing trending summaries of each theme, with illustrative quotes. For tenured analysts, response coding is a cumbersome activity, often taking up to 1hr per 100 responses.
+ 
+ * Problem 1: the task of coding qualitative data is tedious and dependent on manual effort. 
+ 
+ Churn data, feedback from customer interviews and even our own NPS data indicate that Delighted‚Äôs reporting & analytical tools leave much to be desired ‚Äî 17% of NPS feedback we received in the ‚Äò22 churn report pointed to a need for better text analytics.
+ 
+ * Problem 2: despite customer demand and product development from competition in adjacent markets, we don‚Äôt currently have a productized approach that allows customer to extract value from aggregate, open ended feedback. 
+ 
+ We need to explore and develop a new method of handling open-ended feedback that can effectively analyze and leverage qualitative data, includes customer input / modeling, and carries a specific lens on our customers and existing product.
+"
+SFDC API version support,"**Summary**
+ 
+ The following Salesforce Platform API legacy versions have been deprecated and are no longer supported by Salesforce.
+ 
+ * SOAP: 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0
+ * REST: v21.0, v22.0, v23.0, v24.0, v25.0, v26.0, v27.0, v28.0, v29.0, v30.0
+ * Bulk: 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0
+ 
+ 
+ 
+ **Impact**
+ 
+ Spring‚Äô23 these will be retired and unavailable which would lead calls to fail for applications consuming versions as these endpoints will not be found.
+ 
+ Salesforce will not provide technical support or bug fixes for issues raised in connection with the use of API versions 21.0 through 30.0. Also, API versions 7.0 through 20.0 have been retired and are unavailable with the Summer ‚Äô22 release.
+ 
+ Applications that use versions 21.0 through 30.0 of the \[Web Services Connector\]\(https://developer.salesforce.com/docs/atlas.en-us.salesforce\_developer\_environment\_tipsheet.meta/salesforce\_developer\_environment\_tipsheet/salesforce\_developer\_environment\_wsc.htm\) will also be impacted due to this retirement.
+ 
+ Versions 30.0 and below of the \[Data Loader\]\(https://help.salesforce.com/s/articleView?id=sf.data\_loader.htm&type=5&language=en\_US\) client application that consumes affected API versions will also be impacted due to this retirement.
+ 
+ 
+ 
+ Applications using affected WSC versions will need to adopt a more \[current release\]\(https://github.com/forcedotcom/wsc/releases/\) of the framework.
+ 
+ 
+ 
+ Users of affected Data Loader versions will need to adopt a more \[current release\]\(https://github.com/forcedotcom/dataloader/releases/\) of the client application.
+ 
+ 
+ 
+ **Request**
+ 
+ Prior to the Summer '23 release, customers and partners must modify or upgrade their applications to function with the most current API versions. Can we upgrade Delighted Salesforce application to the most current API version to avoid breaking of integration for our customers?
+ 
+ 
+ 
+ Related GH: https://github.com/delighted/delighted/issues/10288
+ 
+ Slack reference: https://delighted.slack.com/archives/C02GW2ZCD0B/p1663857888848979"
+Android SDK,I'd like to be able to able to embed and display surveys in my android app
+Display multiple Trends on single Over Time Report,"The ability to view multiple trends, overtime in a single report view"
+Gorgias Integration,The ability to automatically trigger surveys to customers after their support tickets are closed in Gorgias
+Capture Project Name or Template name as Default Property,The ability to automatically pass the Delighted Template name to any Delighted integration
+Duplicate survey to another project or platform,The ability to duplicate or clone a Delighted template
+Custom delay for Shopify integration,"The ability to set a custom delay for when my Shopify orders trigger a survey. Currently, my only options are immediatley, after 1 week, 2 weeks and 4 weeks"
+Allocate sending limit across projects,The ability to control how many surveys send or display each month for every project/template that I have in my account
+Single-page customization,"### Summary
+ 
+ New Delighted trial users are not converting to free or paid licenses at a healthy rate \(best in SaaS is 25%, ours is 5%\). We should rollout the following design improvements to the onboarding flow and validate their success via A/B testing in order to deliver a better user experience at account creation.
+ 
+ ### Request:
+ 
+ **What:**¬†All customization settings should be on one page and be customizable in the ""Customize Appearance"" page \(being sure to include it in the onboarding flow\).
+ 
+ **Why:**¬†People are unaware that they can add more questions to their survey, add a thank you page, and the comment prompt is already embedded. This is either because they have a difficult time finding it or because it‚Äôs not shown to them when they first customize the survey. 50 unique support emails alone were labeled with User story = ‚Äúcouldn‚Äôt find feature‚Äù and Product Area = ‚ÄúAdditional questions‚Äù. Additionally, most Users do not know that a Thank you page exists. Established customers will reach out asking if they can redirect people to their google reviews, yelp review, another review site, unaware that the thank you page is hidden behind the survey people button > gear icon. Lastly, not having these settings available at setup \(all survey flow customizations\) keeps people stuck in the onboarding flow- they don't want to send an unfinished survey build."
+Preview survey before sending,"Users are confused about what the survey experience looks like and want to preview the survey experiencing before committing to send the survey. Sending a test survey is not resonating in the same way as ""Preview"" would"
+Block entire domains from sending in a Project,Customers want to be able to prevent any survey from being dispatched \(email\) or shown \(web\) to email addresses with certain domains. They don't want to build it into their individual automatics or scripts and want to lean on Delighted for it instead.
+Custom frequency of Slack digest,"The ability to set a custom frequency for Slack digests. Currently, digests can be configured to send daily, or weekly. However, there isn't a way to set a custom value that is different than those two options"
+Cross-project dashboard/reporting,Create the ability to report on multiple CX projects/templates at once in a single report view
